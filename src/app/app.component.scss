@@ -1,0 +1,17 @@
+.example-container {
+  height: 100%;
+}
+
+.mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+mat-list-item.active {
+  background-color: rgba(0, 0, 0, 0.1);
+}

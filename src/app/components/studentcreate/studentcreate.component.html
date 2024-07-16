@@ -1,0 +1,22 @@
+<h4>Nuevo Estudiante</h4>
+
+<div>
+  <mat-form-field>
+    <input matInput type="text" placeholder="ID" [(ngModel)]="student.id" name="id" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Nombre" [(ngModel)]="student.first_name" name="first_name" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="Apellido" [(ngModel)]="student.last_name" name="last_name" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="email" placeholder="Email" [(ngModel)]="student.email" name="email" required>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="saveStudent()">Guardar</button>
+  <button mat-raised-button type="button" (click)="closeDialog()">Cancelar</button>
+</div>

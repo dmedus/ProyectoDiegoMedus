@@ -1,0 +1,22 @@
+<h4>Nuevo Curso</h4>
+
+<div>
+  <mat-form-field>
+    <input matInput type="text" placeholder="ID" [(ngModel)]="course.id" name="id" required disabled>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="" [(ngModel)]="course.name" name="name" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="text" placeholder="" [(ngModel)]="course.instructor" name="instructor" required>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput type="email" placeholder="" [(ngModel)]="course.credits" name="credits" required>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="saveCourse()">Guardar</button>
+  <button mat-raised-button type="button" (click)="closeDialog()">Cancelar</button>
+</div>

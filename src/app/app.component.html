@@ -1,0 +1,22 @@
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav mode="side" opened>
+    <mat-nav-list>
+      <mat-list-item routerLink="/course" routerLinkActive="active">Cursos</mat-list-item>
+      <mat-list-item routerLink="/student" routerLinkActive="active">Alumnos</mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div class="main-content">
+      <h1 style="margin-left: 35%;"> {{ title }}</h1>
+    </div>
+    <router-outlet></router-outlet>
+
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
